@@ -12,7 +12,7 @@ let TestClass
 const createTestClass = (options = {}) => class Test extends AutoControlledComponent {
   static autoControlledProps = options.autoControlledProps
   static defaultProps = options.defaultProps
-  getInitialState() {
+  initialState() {
     return options.state
   }
   render = () => <div />
